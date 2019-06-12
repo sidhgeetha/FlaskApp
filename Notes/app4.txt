@@ -1,0 +1,6 @@
+goal:
+
+1.display the image based on the word ( input)
+2.use generic controller to handle using variable rules (<>) in flask
+
+
