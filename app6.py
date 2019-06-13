@@ -2,6 +2,7 @@ from flask import Flask,render_template
 app6=Flask(__name__,static_url_path='/static')
 
 @app6.route('/')
+#using variable rule
 
 @app6.route('/<input>')
 def display(input):
