@@ -13,14 +13,15 @@
         <title> {{title}}_microblog </title>
         {%else%}
         <title>welcome</title>
+        {%endif%}
     </head>
     <body>
         <h1>Hi,{{user.username}}</h1>
-        {%for post in posts%}
+        {% for post in posts %}
         <div>
-            <p>{{post.author.username}} says:<b>{{<post.body}}</b></p>
+            <p>{{post.author.username}} says: <b> {{ post.body }}</b></p>
         </div>
-        {%endfor%}
+        {% endfor %}
      
     </body>
 </html>
